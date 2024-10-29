@@ -20,10 +20,10 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: '테스트',
+    summary: '외주개발사가 납품한 서비스는 하자가 왜이렇게 많냐구요??',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      '더코딩런처는 테스트 시나리오를 기반해서 테스트 커버리지 90%에 가까운 단위테스트, 통합테스트, E2E테스트를 진행합니다.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -54,11 +54,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Inventory',
+    name: '보안',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      '외주개발사들은 자기 앱 개발하는게 아니니 보안적인 부분이 소홀하다고요?',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      '더코딩런처는 웹/앱 서비스에서 지켜야할 20가지 보안 원칙을 준수해서 저희 서비스 개발하듯이 개발합니다.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -82,11 +82,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Contacts',
+    name: '인수인계',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      '개발사들이 전문용어 뽐내면서 말로 때우려 하거나 정리안된 인수인계 문서에 지치신다고요?',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      '더코딩런쳐는 체계화된 인수인계 원칙을 토대로 ERD, API명세서, 소스코드, README 파일, 화면설계도, 테스트 시나리오 등등 대부분의 산출물을 문서화해서 전달드립니다.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -234,11 +234,11 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            더코딩런처에게 개발을 의뢰하면 어떤 강점이 있나요?
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            개발사가 서비스를 일정안에 출시하는 것은 당연한 의무입니다. 추가적인
+            강점을 설명드립니다.
           </p>
         </div>
         <FeaturesMobile />

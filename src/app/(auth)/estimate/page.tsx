@@ -34,6 +34,7 @@ import Admin from './components/Admin'
 import Extra from './components/Extra'
 import Tech from './components/Tech'
 import { Card } from 'antd'
+import { Button } from '@/components/Button'
 
 const Estimate = () => {
   return (
@@ -54,9 +55,10 @@ const Estimate = () => {
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-2">
           <div className="fixed w-[15%]">
-            <Card title="예상견적 및 일정">
-              <p>금액 : 약 1천만원</p>
-              <p>기간 : 약 3개월</p>
+            <Card title="선택한 기능으로 의뢰">
+              <Button color="slate">
+                <span>무료 상담 신청</span>
+              </Button>
             </Card>
           </div>
         </div>

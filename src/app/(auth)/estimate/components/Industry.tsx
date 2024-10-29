@@ -1,7 +1,8 @@
 'use client'
 
 import React, { Children, useState } from 'react'
-import { TreeSelect, Card } from 'antd'
+import { TreeSelect, Card, Divider } from 'antd'
+import { Button } from '@/components/Button'
 
 const { SHOW_PARENT } = TreeSelect
 
@@ -96,7 +97,7 @@ const treeData = [
         key: '0-1-0',
         children: [
           {
-            title: '넷플릭스, 디즈니, 쿠팡플레이',
+            title: '넷플릭스, 디즈니, 쿠팡플레커',
             value: '0-1-0-0',
             key: '0-1-0-0',
           },
@@ -639,7 +640,7 @@ const treeData = [
 ]
 
 const Industry: React.FC = () => {
-  const [value, setValue] = useState(['0-0-0'])
+  const [value, setValue] = useState<string[]>()
 
   const onChange = (newValue: string[]) => {
     console.log('onChange ', newValue)
@@ -660,7 +661,14 @@ const Industry: React.FC = () => {
 
   return (
     <>
-      <Card title="산업군&벤치마킹">
+      <Card
+        title="산업군&벤치마킹"
+        extra={
+          <Button onClick={() => setValue(['0-5'])} color="slate">
+            <span>기본값 적용</span>
+          </Button>
+        }
+      >
         <TreeSelect {...tProps} />
       </Card>
     </>

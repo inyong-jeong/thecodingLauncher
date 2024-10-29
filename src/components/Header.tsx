@@ -10,6 +10,8 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
+import { fetchRevenue } from '@/app/lib/data'
+
 function MobileNavLink({
   href,
   children,
@@ -98,6 +100,9 @@ function MobileNavigation() {
 }
 
 export function Header() {
+  // const date = await fetchRevenue()
+  // console.log('test', date)
+
   return (
     <header className="py-10">
       <Container>

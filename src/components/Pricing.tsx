@@ -105,7 +105,7 @@ function Plan({
         className="mt-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
-        Get started
+        상담신청
       </Button>
     </section>
   )
@@ -123,56 +123,67 @@ export function Pricing() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
-              <span className="relative">Simple pricing,</span>
+              <span className="relative">가격 정책</span>
             </span>{' '}
             for everyone.
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+            해당 가격 정책은 일반적인 서비스를 기준으로한 간편 견적입니다.
+            <br />* 디자인, 기능 추가에 따라 가격이 조정됩니다.
           </p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
-            name="Starter"
-            price="$9"
-            description="Good for anyone who is self-employed and just getting started."
+            name="small business"
+            price="500 만원"
+            description="더코딩런처 개발사가 결과물을 잘 제공하는지 실제 협업하며 알고 싶으신 분께 추천 드립니다. 예산에 맞추어 출시가 가능 합니다."
             href="/register"
             features={[
-              'Send 10 quotes and invoices',
-              'Connect up to 2 bank accounts',
-              'Track up to 15 expenses per month',
-              'Manual payroll support',
-              'Export up to 3 reports',
+              '디자인은 20페이지 내외 입니다.',
+              '인증기능(회원가입, 로그인 ...)',
+              '공통 콤퍼넌트 디자인',
+              '데이터 관리 기능(CRUD)',
+              '테스트 및 QA',
+              '산업별 핵심 기능 1~2가지',
             ]}
           />
           <Plan
             featured
-            name="Small business"
-            price="$15"
-            description="Perfect for small / medium sized businesses."
+            name="standard"
+            price="3000 만원"
+            description="초창기 스타트업 규모의 어플리케이션 출시 원하시는 분들께 추천드립니다."
             href="/register"
             features={[
-              'Send 25 quotes and invoices',
-              'Connect up to 5 bank accounts',
-              'Track up to 50 expenses per month',
-              'Automated payroll support',
-              'Export up to 12 reports',
-              'Bulk reconcile transactions',
-              'Track in multiple currencies',
+              '디자인 60페이지 내외',
+              '인증(소셜 로그인, 회원가입, 재설정)',
+              '웹 디자인',
+              '사용자 인터페이스 컴포넌트',
+              '데이터 관리( CRUD, 데이터 시각화 )',
+              '외부 API 연동',
+              '산업 섹션별 필요한 기능 5~6가지',
+              '관리자 페이지',
+              '테스트 및 QA',
+              '기타',
             ]}
           />
           <Plan
             name="Enterprise"
-            price="$39"
-            description="For even the biggest enterprise companies."
+            price="5000 만원"
+            description="stadard 에서 여러가지 기능을 추가하고 싶으신 분들께 추천드립니다."
             href="/register"
             features={[
-              'Send unlimited quotes and invoices',
-              'Connect up to 15 bank accounts',
-              'Track up to 200 expenses per month',
-              'Automated payroll support',
-              'Export up to 25 reports, including TPS',
+              '디자인 100페이지 내외',
+              '인증(소셜 로그인, 회원가입, 재설정)',
+              '반응형 웹 디자인',
+              '고급 사용자 인터페이스 컴포넌트',
+              '데이터 관리( CRUD, 필터링, 페이징, 데이터 시각화 )',
+              '복잡한 외부 API 연동',
+              '결제 기능',
+              '채팅 기능',
+              '관리자 페이지',
+              '멀티미디어 기능',
+              '테스트 및 QA',
+              '기타',
             ]}
           />
         </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { TreeSelect, Card } from 'antd'
+import { Button } from '@/components/Button'
 
 const { SHOW_PARENT } = TreeSelect
 
@@ -70,7 +71,14 @@ const Admin: React.FC = () => {
 
   return (
     <>
-      <Card title="어드민 기능">
+      <Card
+        title="어드민 기능"
+        extra={
+          <Button onClick={() => setValue(['0-0'])} color="slate">
+            <span>기본값 적용</span>
+          </Button>
+        }
+      >
         <TreeSelect {...tProps} />
       </Card>
     </>

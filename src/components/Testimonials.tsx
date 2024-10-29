@@ -11,19 +11,19 @@ const testimonials = [
   [
     {
       content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+        '배터리 산업에 종사하고 있어서 배터리 관련 어플리케이션을 만들고 싶었습니다. 더코딩런쳐의 도움을 받아 기간과 견적을 빠르고 쉽게 알 수 있었습니다. ',
       author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
+        name: '현철독일',
+        role: '전기차 배터리 대리',
         image: avatarImage1,
       },
     },
     {
       content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
+        '반도체 산업에 종사중에 특정 기술은 단순 반복작업이 많았습니다. 해당 작업을 자동화 하고 싶어 의뢰를 하였고 원하는 결과물을 얻을 수 있었습니다. 적극 추천드립니다.',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: '베릴로그민기여',
+        role: '반도체 산업 엔지니어',
         image: avatarImage4,
       },
     },
@@ -31,19 +31,19 @@ const testimonials = [
   [
     {
       content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
+        '부동산에 관심이 많아 아실이나 호갱노노와 같은 어플을 제작하고 싶었어요. 실질적으로 어떤 기능이 필요하며 얼마가 들며 어느정도 기간이 필요한지 알 수 있었습니다. 막연하게 생각했던 아이디어를 실체화 할 수 있었던 계기가 되었습니다.',
       author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
+        name: '영혼의숙제',
+        role: '금융기관 대리',
         image: avatarImage5,
       },
     },
     {
       content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
+        '의료 업계에 종사하고 있었습니다. 환자들을 상담해주고 케어해주는 어플을 만들고 싶었는데 어떤 구상을 해야하고 어떤 기능이 필요한지를 더코딩런처를 통해서 확실히 알 수 있었습니다.',
       author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
+        name: '기가막힌약국',
+        role: '간호사',
         image: avatarImage2,
       },
     },
@@ -51,19 +51,19 @@ const testimonials = [
   [
     {
       content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
+        '샐러드바를 창업해서 운영중에 있습니다. 원가를 절감하기 위해서 제품을 관리해주는 시스템이 필요했는데 더코딩런처를 통해서 방향성을 잡을 수 있었습니다. 적극 추천합니다.',
       author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
+        name: '샐러드의 화신',
+        role: 'COO',
         image: avatarImage3,
       },
     },
     {
       content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
+        '외국인과 한국인을 매칭시켜주는 어플을 만들고 싶어 더코딩런처에게 의뢰했습니다. 1:1채팅, 이미지, 프로필, 매칭, 인증, 푸시알림 등등의 기능은 어느정도 소요되며 어느정도 견적이 드는지 빨리 알 수 있어 시간을 세이브 할 수 있었습니다.',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: '한외커플',
+        role: '국제결혼정보업체대표',
         image: avatarImage4,
       },
     },
@@ -88,13 +88,11 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Loved by businesses worldwide.
+            의뢰인들의 추천사
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
-          </p>
+          {/* <p className="mt-4 text-lg tracking-tight text-slate-700">
+             실제 IT 서비스를 만들기전 
+          </p> */}
         </div>
         <ul
           role="list"

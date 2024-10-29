@@ -22,13 +22,13 @@ const features = [
   {
     title: '확장성과 성능최적화를 고려하지 않은 개발',
     description:
-      '일단 돌아가는게 중요하다라는 명분하에 유지보수, 확장성, 성능최적화를 고려하지 않는 경향이 많습니다. ',
+      '일단 돌아가는게 중요하다라는 명분하에 유지보수, 확장성, 성능최적화를 고려하지 않습니다. ',
     image: screenshotExpenses,
   },
   {
-    title: '프로젝트의 진척상황을 알아보기 어려움',
+    title: '검증되지 않은 시니어 개발자의 리드',
     description:
-      '현재 프로젝트가 어느정도 진행되고 있는지 알아보기가 힘듭니다. ',
+      '프로젝트의 성패는 리더의 역량이 8할입니다. 단순히 경력이 많고 아는게 많다고 개발을 잘해주는게 아닙니다.',
     image: screenshotVatReturns,
   },
   {
@@ -98,7 +98,7 @@ export function PrimaryFeatures() {
                           : 'hover:bg-white/10 lg:hover:bg-white/5',
                       )}
                     >
-                      <h3>
+                      <h3 className="">
                         <Tab
                           className={clsx(
                             'font-display text-lg ui-not-focus-visible:outline-none',
@@ -108,7 +108,7 @@ export function PrimaryFeatures() {
                           )}
                         >
                           <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
-                          {feature.title}
+                          <span className="text-[27px]">{feature.title}</span>
                         </Tab>
                       </h3>
                       <p
@@ -119,7 +119,9 @@ export function PrimaryFeatures() {
                             : 'text-blue-100 group-hover:text-white',
                         )}
                       >
-                        {feature.description}
+                        <span className="text-[20px]">
+                          {feature.description}
+                        </span>
                       </p>
                     </div>
                   ))}

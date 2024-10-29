@@ -7,8 +7,15 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
+import Consult from '@/components/Consult'
 
-export default function Home() {
+import { fetchRevenue } from '../lib/data'
+import Portfolio from '@/components/Portfolio'
+import Team from '@/components/Team'
+
+export default async function Home() {
+  const test = await fetchRevenue()
+  console.log('server log;;;', test)
   return (
     <>
       <Header />
@@ -17,8 +24,11 @@ export default function Home() {
         <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
+        <Portfolio />
+        <Team />
         <Testimonials />
         <Pricing />
+        <Consult />
         <Faqs />
       </main>
       <Footer />

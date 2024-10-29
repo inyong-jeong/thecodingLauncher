@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { TreeSelect, Card } from 'antd'
+import { Button } from '@/components/Button'
 
 const treeData = [
   {
@@ -48,7 +49,14 @@ const Design: React.FC = () => {
   }
 
   return (
-    <Card title="디자인">
+    <Card
+      title="디자인"
+      extra={
+        <Button onClick={() => setValue('0-2')} color="slate">
+          <span>기본값 적용</span>
+        </Button>
+      }
+    >
       <TreeSelect
         style={{ width: '100%' }}
         value={value}
