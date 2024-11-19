@@ -118,9 +118,9 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
-            </div>
+            </div> */}
             <Button href="/estimate" color="blue">
               <span>
                 더코딩런처 <span className="hidden lg:inline">무료이용</span>

@@ -63,7 +63,7 @@ const Estimate = () => {
           </div>
         </div>
         <div className="col-span-10">
-          <div className="grid grid-cols-12 gap-4">
+          <div className="grid grid-cols-12 gap-4 rounded-lg p-8 shadow-lg shadow-gray-300">
             <div className="col-span-4">
               <Industry />
             </div>
@@ -85,7 +85,7 @@ const Estimate = () => {
           </div>
           <hr className="my-4 border-y-2" />
           <p>기능</p>
-          <div className="grid grid-cols-12 gap-4">
+          <div className="grid grid-cols-12 gap-4 rounded-lg p-8 shadow-lg shadow-gray-300">
             <div className="col-span-4">
               <Onboarding />
             </div>
